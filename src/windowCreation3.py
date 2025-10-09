@@ -4,7 +4,7 @@ from PyQt6.QtWidgets import QApplication, QDialog
 
 app = QApplication(sys.argv)
 
-window = QDialog()
+window = QDialog() # Creates dialog window
 
 window.show()
 

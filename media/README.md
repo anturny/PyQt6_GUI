@@ -1,0 +1,1 @@
+This folder is for media related to each module as shown in the repository.

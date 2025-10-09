@@ -36,3 +36,36 @@ window.menuBar().addMenu("File")
 This is the beginning of how to create a window in the [windowCreation3.py](/src/windowCreation3.py) file.
 
 This tutorial only creates a dialog window which are primarily used for short-term tasks and brief communications with the user.
+```
+window = QDialog()
+```
+
+## Classes and Calling to Self
+This is the beginning of how to create a window in the [windowCreation4.py](/src/windowCreation4.py) file.
+
+Class extends from QWidget. When inheriting from a class, we are able to access all attributes of that class. Now the Window class can access all attributes of the QWidget class.
+
+We utilize _init__ is a reserved method in Python classes called a constructor in object-orientated programming. This method is called when an object is created from a class and it allows the the class to initialize the tributes of that class.
+
+super() is used to give access to methods and properties of the parent class, and it also makes class inheritance more manageable.
+
+It is also important to note that the picture used to demonstrate the icon can be found in the media/windowsMedia/qt.png pathway.
+
+![alt text](qt.png)
+
+In this file, we play with many customization options as shown in the code below.
+```
+class Window(QWidget):
+    def __init__(self): 
+        super().__init__()
+
+        self.setWindowTitle("PyQt6 Course")
+
+        self.setWindowIcon(QIcon("media/windowsMedia/qt.png"))
+
+        self.setGeometry(200, 200, 500, 400)
+
+        self.setStyleSheet('background-color:red')
+
+        self.setWindowOpacity(0.7)
+```
