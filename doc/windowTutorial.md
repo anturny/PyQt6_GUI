@@ -1,6 +1,3 @@
-# Credit
-Note that this entire tutorial is thanks to Parwiz Forogh's YouTube Tutorial at [PyQt6 - The Ultimate GUI Toolkit for Python Developers in 2023](https://youtu.be/_16NK5LZPes?si=4e_72eY-PwwBHf30).
-
 # Step-by-step Rundown
 The first step to building this Python-based GUI is to install the toolkit inside the terminal after activating the virtual environment.
 ```
@@ -17,4 +14,14 @@ This is where we enter the main loop of the application and the event handling b
 sys.exit(app.exec())
 ```
 
-This is the end of how to create a window.
+This is the end of how to create a window in the [windowCreation.py](/src/windowCreation.py) file.
+
+## Window Class Types
+- QMainWindow
+This window class provides a main application window. A main window provides a framework for building an application's user interface. PyQt has QMainWindow and its related classes for main window management. It also has its own layout to which you can add QToolBars, QDockWidgets, QMenuBar, and QStatusBar.
+
+- QDialog
+The QDialog class is the base class of dialog window. A dialog window is a top-level window mostly used for short-term tasks and brief communications with the user. QDialogs may be modal or modeless.
+
+- QWidget
+The QWidget class is the base class of all user interface objects. The widget is the important point of the user interface as it receives mouse, keyboard, and other events from the window system and paints a representation of itself on the screen. 
