@@ -1,0 +1,25 @@
+# QTDesigner
+
+It should be noted before ANYTHING else that QTDesigner is the tool for designing and building graphical user interfaces or GUIs with QT Widgets. You can customize your windows or dialogues in a "what you see is what you get" manner. We can test them with different styles and resolutions. 
+
+In the terminal, we will need to install PyQt6 tools in order to access QT Designer as the base pip does not come with it. However, the main problem is that the terminal command only accepts Python 3.9.0, not 3.12.0 that we were previously working with. Please install Python 3.9.0 and restart your virtual environment if you haven't already done so.
+
+Upon setting up your new Python 3.9.0 environment, your pip installations should be wiped. The requirements.txt file should now be reflecting the new pip updates with the tools so please reinstall PyQt6 with either of the options below in the terminal.
+
+```
+pip install -r requirements.txt
+```
+or
+```
+pip install pyqt6-tools
+```
+
+It should also additionally be noted that you should NOT attempt to execute the following command as it will make the tools and PyQt6 incompatible.
+```
+pip install PyQt6 --upgrade
+```
+
+If you accidentally ran that command, please use the following command in the terminal, type in "Y", hit enter, and then execute either of the installations as told above.
+```
+pip uninstall PyQt6
+```
