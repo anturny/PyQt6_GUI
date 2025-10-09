@@ -51,7 +51,7 @@ super() is used to give access to methods and properties of the parent class, an
 
 It is also important to note that the picture used to demonstrate the icon can be found in the media/windowsMedia/qt.png pathway.
 
-![alt text](qt.png)
+![alt text](/media/windowsMedia/qt.png)
 
 In this file, we play with many customization options as shown in the code below.
 ```
