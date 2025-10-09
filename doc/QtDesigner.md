@@ -37,3 +37,15 @@ I input as the following.
 ```
 pyuic6 -x src/Window.ui -o src/Window_UI.py
 ```
+
+This is in order to translate our main design into our coding logic, which is actually ineffective. It should run your design when you press "Run". 
+
+In order to port it easier, you can also do the following.
+```
+pyuic6 "UI file name" > "new PY file name"
+```
+For example:
+```
+pyuic6 Window.ui > Window_UI.py
+```
+When you run this, there is no QApplication and the loop. It will not run. We can load it into another file in order to separate the main code from the logic code. 
