@@ -26,7 +26,7 @@ pip uninstall PyQt6
 
 If you're the lucky soul who made it this far with all your code working, navigate to the pathway PyQt6_GUI/.venv/Lib \site-packages/qt6_appplications/Qt/bin/designer.exe, right click and open it insider File Explorer.
 
-At this point, please follow the tutorial in the [YouTube demonstration](https://youtu.be/_16NK5LZPes?si=asA0FvDcwoGcX1ce&t=1565) as it is difficult to demonstrate a completely different application within the scope of VSCode. I created a Window.UI file within the src folder in order to follow the tutorial.
+At this point, please follow the tutorial in the [YouTube demonstration](https://youtu.be/_16NK5LZPes?si=asA0FvDcwoGcX1ce&t=1565) as it is difficult to demonstrate a completely different application within the scope of VSCode. I created a [Window.ui](/src/Window.ui) file within the src folder in order to follow the tutorial.
 
 The next step is to use the terminal again in the following format.
 ```
@@ -38,7 +38,7 @@ I input as the following.
 pyuic6 -x src/Window.ui -o src/Window_UI.py
 ```
 
-This is in order to translate our main design into our coding logic, which is actually ineffective. It should run your design when you press "Run". 
+This is in order to translate our main design into our coding logic, which is actually ineffective. You should now have the [Window_UI.py](/src/Window_UI.py) file created.  It should run your design when you press "Run". 
 
 In order to port it easier, you can also do the following.
 ```
