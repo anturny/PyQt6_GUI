@@ -6,10 +6,10 @@ We will copy the contents of the [windowCreation4.py](/src/WindowCreation/window
 
 In this file, we learn about importing QMenu and QPushButton from QtWidget, QSize from QtCore, and QFont from QtGui.
 
-QMenu: Class used to create menu widgets
-QPushButton: Clickable widget to trigger actions in UI
-QSize: Class that changes size of window
-QFont: Class that changes font type and size
+- QMenu: Class used to create menu widgets
+- QPushButton: Clickable widget to trigger actions in UI
+- QSize: Class that changes size of window
+- QFont: Class that changes font type and size
 
 We customize the push button and drop down menu by manipulating its size, color, and font.
 
@@ -19,9 +19,9 @@ QLabel widget provides text, gifs, or widget display. The user interaction funct
 
 We will need QLabel from QtWidgets, QPixmap and QMovie from QtGui. 
 
-QLabel: Class for text and image display
-QPixmap: Class of off-screen image representation that can be used as a paint device
-QMovie: Convenience class for playing movies with QImageReader
+- QLabel: Class for text and image display
+- QPixmap: Class of off-screen image representation that can be used as a paint device
+- QMovie: Convenience class for playing movies with QImageReader
 
 The file showcases how we can use QLabel to setup labels inside a window and modify the text, position, font, and color.
 
