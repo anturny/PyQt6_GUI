@@ -24,7 +24,11 @@ If you accidentally ran that command, please use the following command in the te
 pip uninstall PyQt6
 ```
 
-If you're the lucky soul who made it this far with all your code working, navigate to the pathway PyQt6_GUI/.venv/Lib \site-packages/qt6_applications/Qt/bin/designer.exe, right click and open it inside File Explorer. This will open the [QtDesigner Software](.venv\Lib\site-packages\qt6_applications\Qt\bin\designer.exe)
+If you're the lucky soul who made it this far with all your code working, navigate to the pathway PyQt6_GUI/.venv/Lib \site-packages/qt6_applications/Qt/bin/designer.exe, right click and open it inside File Explorer. This will open the QtDesigner Software. Note that this requires a virtual environment to be open.
+
+It should look like this:
+
+![alt text](/media/windowsMedia/QTDesignerApp.png)
 
 At this point, please follow the tutorial in the [YouTube demonstration](https://youtu.be/_16NK5LZPes?si=asA0FvDcwoGcX1ce&t=1565) as it is difficult to demonstrate a completely different application within the scope of VSCode. I created a [Window.ui](/src/Window.ui) file within the src folder in order to follow the tutorial.
 
