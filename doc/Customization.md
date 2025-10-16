@@ -88,3 +88,7 @@ line_edit.setPlaceholderText("Please enter your username: ")
 line_edit.setEnabled(False)
 line_edit.setEchoMode(QLineEdit.EchoMode.Password)
 ```
+
+# QHBoxLayout
+
+QHBoxLayout is related to the QtWidgets 
