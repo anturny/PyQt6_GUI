@@ -1,5 +1,5 @@
 from PyQt6.QtWidgets import QApplication, QWidget
-from Window_UI import Ui_Form # This is from the Window_UI.py file, we take classes from that file into THIS document.
+from QtDesigner.Window_UI import Ui_Form # This is from the Window_UI.py file, we take classes from that file into THIS document.
 import sys
 
 class Window(QWidget):

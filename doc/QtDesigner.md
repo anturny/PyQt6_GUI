@@ -30,7 +30,7 @@ It should look like this:
 
 ![alt text](/media/windowsMedia/QTDesignerApp.png)
 
-At this point, please follow the tutorial in the [YouTube demonstration](https://youtu.be/_16NK5LZPes?si=asA0FvDcwoGcX1ce&t=1565) as it is difficult to demonstrate a completely different application within the scope of VSCode. I created a [Window.ui](/src/Window.ui) file within the src folder in order to follow the tutorial.
+At this point, please follow the tutorial in the [YouTube demonstration](https://youtu.be/_16NK5LZPes?si=asA0FvDcwoGcX1ce&t=1565) as it is difficult to demonstrate a completely different application within the scope of VSCode. I created a [Window.ui](/src/QtDesigner/Window.ui) file within the src folder in order to follow the tutorial.
 
 The next step is to use the terminal again in the following format.
 ```
@@ -42,7 +42,7 @@ I input as the following.
 pyuic6 -x src/Window.ui -o src/Window_UI.py
 ```
 
-This is in order to translate our main design into our coding logic, which is actually ineffective. You should now have the [Window_UI.py](/src/Window_UI.py) file created.  It should run your design when you press "Run". 
+This is in order to translate our main design into our coding logic, which is actually ineffective. You should now have the [Window_UI.py](/src/QtDesigner/Window_UI.py) file created.  It should run your design when you press "Run". 
 
 In order to port it easier, you can also do the following.
 ```
@@ -54,10 +54,10 @@ pyuic6 Window.ui > Window_UI.py
 ```
 When you run this, there is no QApplication and the loop. It will not run. We can load it into another file in order to separate the main code from the logic code. 
 
-Inside the src folder, we create a new file named [MainWindow_UI](/src/MainWindow_UI.py) where we actually import the class from the previously created Window_UI.py folder. This is why classes are important for GUIs. 
+Inside the src folder, we create a new file named [MainWindow_UI](/src/QtDesigner/MainWindow_UI.py) where we actually import the class from the previously created Window_UI.py folder. This is why classes are important for GUIs. 
 
-Upon running the code as shown in the file, we will see that calling to the [Window_UI.py](/src/Window_UI.py) file in order to access the class. That class is representative of the design we created inside the QtDesigner program. The point of this file is to be able to showcase the GUI in another main file, calling to its class, and modifying it there if need be. 
+Upon running the code as shown in the file, we will see that calling to the [Window_UI.py](/src/QtDesigner/Window_UI.py) file in order to access the class. That class is representative of the design we created inside the QtDesigner program. The point of this file is to be able to showcase the GUI in another main file, calling to its class, and modifying it there if need be. 
 
-If we need to load the UI from just the .ui file, we can see in the [LoadUI.py](/src/LoadUI.py) folder that we are able to find the pathway and use uic from PyQt6 in order to convert a .ui file into a .py file. 
+If we need to load the UI from just the .ui file, we can see in the [LoadUI.py](/src/QtDesigner/LoadUI.py) folder that we are able to find the pathway and use uic from PyQt6 in order to convert a .ui file into a .py file. 
 
 This concludes the QtDesigner Intro file.
