@@ -57,3 +57,7 @@ When you run this, there is no QApplication and the loop. It will not run. We ca
 Inside the src folder, we create a new file named [MainWindow_UI](/src/MainWindow_UI.py) where we actually import the class from the previously created Window_UI.py folder. This is why classes are important for GUIs. 
 
 Upon running the code as shown in the file, we will see that calling to the [Window_UI.py](/src/Window_UI.py) file in order to access the class. That class is representative of the design we created inside the QtDesigner program. The point of this file is to be able to showcase the GUI in another main file, calling to its class, and modifying it there if need be. 
+
+If we need to load the UI from just the .ui file, we can see in the [LoadUI.py](/src/LoadUI.py) folder that we are able to find the pathway and use uic from PyQt6 in order to convert a .ui file into a .py file. 
+
+This concludes the QtDesigner module.
