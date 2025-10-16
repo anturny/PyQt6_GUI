@@ -24,7 +24,7 @@ If you accidentally ran that command, please use the following command in the te
 pip uninstall PyQt6
 ```
 
-If you're the lucky soul who made it this far with all your code working, navigate to the pathway PyQt6_GUI/.venv/Lib \site-packages/qt6_appplications/Qt/bin/designer.exe, right click and open it insider File Explorer.
+If you're the lucky soul who made it this far with all your code working, navigate to the pathway PyQt6_GUI/.venv/Lib \site-packages/qt6_appplications/Qt/bin/designer.exe, right click and open it inside File Explorer. This will open the [QtDesigner%20Software](/.venv\Lib\site-packages\qt6_applications\Qt\bin\designer.exe)
 
 At this point, please follow the tutorial in the [YouTube demonstration](https://youtu.be/_16NK5LZPes?si=asA0FvDcwoGcX1ce&t=1565) as it is difficult to demonstrate a completely different application within the scope of VSCode. I created a [Window.ui](/src/Window.ui) file within the src folder in order to follow the tutorial.
 
@@ -49,3 +49,7 @@ For example:
 pyuic6 Window.ui > Window_UI.py
 ```
 When you run this, there is no QApplication and the loop. It will not run. We can load it into another file in order to separate the main code from the logic code. 
+
+Inside the src folder, we create a new file named [MainWindow_UI](/src/MainWindow_UI.py) where we actually import the class from the previously created Window_UI.py folder. This is why classes are important for GUIs. 
+
+Upon running the code as shown in the file, we will see that calling to the [Window_UI.py](/src/Window_UI.py) file in order to access the class. That class is representative of the design we created inside the QtDesigner program. The point of this file is to be able to showcase the GUI in another main file, calling to its class, and modifying it there if need be. 
