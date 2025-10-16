@@ -60,4 +60,4 @@ Upon running the code as shown in the file, we will see that calling to the [Win
 
 If we need to load the UI from just the .ui file, we can see in the [LoadUI.py](/src/LoadUI.py) folder that we are able to find the pathway and use uic from PyQt6 in order to convert a .ui file into a .py file. 
 
-This concludes the QtDesigner module.
+This concludes the QtDesigner Intro file.
